@@ -51,7 +51,7 @@ module.exports = function (argv) {
     var deckVer = exec('npm info @deck/app version')
     console.log('npm version: ' + npmVer)
     console.log('deck version: ' + deckVer)
-    return
+    return process.exit()
   }
 
   console.log('  Commands:\n')

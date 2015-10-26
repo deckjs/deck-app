@@ -30,10 +30,6 @@ module.exports = function (argv) {
     return require('./lib/present')(argv._[argv._.length - 1], argv)
   }
 
-  // if (arg('list')) {
-  //   return require('./lib/list')()
-  // }
-
   if (arg('edit')) {
     require('./lib/edit')(argv._[argv._.length - 1], argv)
   }

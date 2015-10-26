@@ -9,6 +9,7 @@ if (electron) {
 
 if (!electron) {
   if (os === 'Windows_NT' && process.argv[2] === 'init') {
+    require('babel/register')
     require('./')(require('minimist')(process.argv.slice(2)))
     return
   }

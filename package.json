@@ -27,6 +27,7 @@
     "@deck/base": "^1.0.3",
     "@deck/gui": "^1.1.0",
     "@deck/presenter": "^1.3.0",
+    "babel": "^5.8.29",
     "charm": "^1.0.0",
     "dot-stream": "^1.0.1",
     "editor": "1.0.0",

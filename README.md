@@ -82,5 +82,11 @@ Sponsored by <a href="http://nearform.com">nearForm</a>
   * Mihai Dima
   * Cristian Kiss
 
+### Contributing
 
+Deck is an **OPEN Open Source Project**. This means that:
+
+> Individuals making significant and valuable contributions are given commit-access to a project to contribute as they see fit. A project is more like an open wiki than a standard guarded open source project.
+
+See the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for more details.
 

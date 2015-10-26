@@ -16,6 +16,11 @@ npm install -g deck-app
 
 ## CLI
 
+The @deck/app module acts as an entry point and CLI tool for deck.
+
+To learn how to use the GUI (e.g. global hot keys) see <https://github.com/nearform/deck-gui>
+
+
 ```sh
 deck <command> [arguments]
 ```

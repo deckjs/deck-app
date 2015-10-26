@@ -1,76 +1,93 @@
 # deck-app
 
-**Deck** is an application that enables content presenters maintain and display their markdown content on an enhanced visual presentation.
+Deck is a markdown driven content presentation system
 
-The **Deck** command format is the following:
-
-```sh
-deck <command> [command options]
-```
-
-The main Deck commands are:
-
-* init
-* install
-* present
-* edit
-* upstream
-
-## Installing Deck
+## Installing
 
 ```javascript
 npm install -g @deck/app
 ```
 
-## Deck usage
+On Node 0.10 (with npm 1):
 
-### Making a new presentation
+```javascript
+npm install -g deck-app
+```
 
-Initializing a new presentation project is made using the command:
+## CLI
+
+```sh
+deck <command> [arguments]
+```
+
+### Commands
+
+#### Create
+
+A slide deck is a "content module": a folder with at least a
+`package.json` and `deck.md` file.
+
 
 ```javascript
 deck init
 ```
 
-This will create a basic presentation project.
+Analogous to `npm init`, the `deck init` command provisions
+a folder with the files that make up a slide deck. 
 
-## Preparing a deck for visualisation
+#### Get Dependencies
 
 ```javascript
 deck install
 ```
 
-Will install all package dependencies needed by the presentation project.
+Much like `npm install` when run without options `deck install` will install dependencies for a slide deck (generally we would do this after a `deck init`)
 
-## Present a deck material
+#### Fetch
 
-In the presentation material folder (where the `deck.md` file is located) run the following command:
+```javascript
+deck install <slide deck name>
+```
+
+When a slide deck is specified, `deck` will use npm to download 
+and install the content module. Unlike an npm install, the resulting
+slide deck folder will placed in the current working directory instead
+of a `node_modules` folder. Otherwise all other `npm` behaviours apply (e.g. will lookup from repo as per `npm config` etc.)
+
+#### Present
 
 ```sh
-deck present [<material name>]
+deck present [<slide deck path>] [!]
 ```
-If no parameter provided it will present the `deck.md` file located in the current folder.
 
-After the presentation is ready a list of commands are displayed to the user:
-* e: edit - launched by pressing the key `e`, opens the current presentation with the default text editor
-* o: open - launched by pressing the key `o`, displays the presentation
+When run in a slide deck folder, this will build a presentation from the `deck.md` file in the current folder then open `@deck/gui` for viewing and presenting. 
 
-## Edit a deck
+If a path to a slide deck is supplied it will likewise be presented.
+
+A special syntax `deck present !` instructs `deck` to present the 
+most recently installed content module. 
+
+#### Edit
 
 ```sh
-deck edit [<material name>]
+deck edit [<slide deck path>]
 ```
-Opens the presentation material with the default editor registered in the system.
-If no parameter provided it will edit the `deck.md` file located in the current folder.
 
-## Push deck to github
+Opens a slide decks `deck.md` file in the default systen editor (as per the `$EDITOR` environment variable). If given a path the `deck.md` file at the supplied path will be opened, otherwise a `deck.md` in the current folder will be opened.
+
+#### Upstream
 
 ```sh
-deck upstream [<material name>]
+deck upstream [<slide deck path>]
 ```
-Creates a new branch on github, pushes the modified material and makes a pull request with the change.
-If no parameter provided it will push the `deck.md` file located in the current folder.
 
+Creates a new branch on GitHub, pushes modified content and 
+makes a pull request with the change. 
+
+The slide deck does not need to be a git repository for `upstream`
+to function - however Github keys are required (see https://github.com/nearform/deck-upstream)
+
+If a path is not supplied, the current folder is assumed.
 
 ## Credits
 

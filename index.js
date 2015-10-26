@@ -1,6 +1,6 @@
 var path = require('path')
 var fs = require('fs')
-var logo = require('nearform-terminal-logo').toTTY
+var logo = require('@deck/terminal-logo').toTTY
 var exec = require('child_process').execSync
 
 function arg (p) {

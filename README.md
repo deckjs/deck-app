@@ -93,6 +93,21 @@ to function - however Github keys are required (see https://github.com/nearform/
 
 If a path is not supplied, the current folder is assumed.
 
+## Technologies
+
+![](anatomy.png)
+
+The deck system is built on and/or utilizes:
+
+* [Electron](http://electron.atom.io)
+* [Gulp](http://gulpjs.com/)
+* [Bespoke.js](http://markdalgleish.com/projects/bespoke.js/)
+* [Markdown](https://daringfireball.net/projects/markdown/)
+* [YAML](http://yaml.org)
+* [NPM](http://npmjs.org)
+* [GitHub](http://github.com)
+
+
 ## Credits
 
 Sponsored by <a href="http://nearform.com">nearForm</a>

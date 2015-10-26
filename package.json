@@ -37,6 +37,7 @@
     "minimist": "^1.1.0",
     "mkdir-p": "0.0.6",
     "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
     "nearform-terminal-logo": "^1.0.0",
     "npm": "^2.5.0",
     "opn": "^1.0.1",

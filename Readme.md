@@ -1,6 +1,8 @@
-# deck-app
+# @deck/app
 
 Deck is a markdown driven content presentation system
+
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
 ## Installing
 
@@ -13,6 +15,8 @@ On Node 0.10 (with npm 1):
 ```javascript
 npm install -g deck-app
 ```
+
+See <https://github.com/nearform/deck-app-unscoped> for how this scope polyfilling mechanism works
 
 ## CLI
 
@@ -106,6 +110,11 @@ The deck system is built on and/or utilizes:
 * [GitHub](http://github.com)
 
 ![](anatomy.png)
+
+## Issues and PR's
+
+* Please open any issues for any deck related module on the <https://github.com/nearform/deck> community repo.
+* Any module specific PR's are welcomed on the corresponding repo.
 
 ## Credits
 

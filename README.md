@@ -95,8 +95,6 @@ If a path is not supplied, the current folder is assumed.
 
 ## Technologies
 
-![](anatomy.png)
-
 The deck system is built on and/or utilizes:
 
 * [Electron](http://electron.atom.io)
@@ -107,6 +105,7 @@ The deck system is built on and/or utilizes:
 * [NPM](http://npmjs.org)
 * [GitHub](http://github.com)
 
+![](anatomy.png)
 
 ## Credits
 

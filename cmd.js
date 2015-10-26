@@ -11,16 +11,16 @@ if (!electron) {
   if (os === 'Windows_NT' && process.argv[2] === 'init') {
     require('babel/register')
     require('./')(require('minimist')(process.argv.slice(2)))
-    return
+  } else {
+    process.title = 'Deck'
+    var spawn = require('child_process').spawn
+    spawn(
+      require('electron-prebuilt'),
+      [__filename].concat(process.argv.slice(2)),
+      {
+        stdio: [0, 1, 2]
+      }).on('close', function (code) {
+        process.exit(code)
+      })
   }
-  process.title = 'Deck'
-  var spawn = require('child_process').spawn
-  spawn(
-    require('electron-prebuilt'),
-    [__filename].concat(process.argv.slice(2)),
-    {
-      stdio: [0, 1, 2]
-    }).on('close', function (code) {
-      process.exit(code)
-    })
 }

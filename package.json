@@ -1,7 +1,7 @@
 {
   "name": "@deck/app",
   "version": "1.4.0",
-  "description": "",
+  "description": "**Deck** is an application that enables content presenters maintain and display their markdown content on an enhanced visual presentation.",
   "main": "index.js",
   "bin": {
     "deck": "./cmd.js",
@@ -53,5 +53,21 @@
   "devDependencies": {
     "pre-commit": "1.1.1",
     "standard": "5.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nearform/deck-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nearform/deck-app/issues"
+  },
+  "homepage": "https://github.com/nearform/deck-app#readme",
+  "keywords": [
+    "presentation",
+    "bespoke",
+    "keynote",
+    "powerpoint",
+    "markdown",
+    "deck"
+  ]
 }

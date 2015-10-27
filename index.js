@@ -3,6 +3,8 @@ var fs = require('fs')
 var logo = require('@deck/terminal-logo').toTTY
 var exec = require('child_process').execSync
 
+require('./lib/dock-control')
+
 function arg (p) {
   return !!~arg.s.indexOf(p)
 }
@@ -52,7 +54,7 @@ module.exports = function (argv) {
 
   console.log('  Commands:\n')
   console.log('   ', fs.readdirSync(path.join(__dirname, 'lib')).filter(function (d) {
-    return d !== 'init-input.js'
+    return d !== 'init-input.js' && d !== 'dock-control'
   }).map(function (d) {
     return d.split('.')[0]
   }).join('\n    '), '\n')

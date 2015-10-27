@@ -9,7 +9,8 @@
   },
   "scripts": {
     "lint": "standard",
-    "format": "standard --format"
+    "format": "standard --format",
+    "postinstall": "node setup-dock-icon"
   },
   "pre-commit": [
     "lint"

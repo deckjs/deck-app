@@ -1,6 +1,6 @@
 {
   "name": "@deck/app",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "**Deck** is an application that enables content presenters maintain and display their markdown content on an enhanced visual presentation.",
   "main": "index.js",
   "bin": {

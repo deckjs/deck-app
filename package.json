@@ -20,6 +20,7 @@
     "cmd.js",
     "deck-path.js",
     "index.js",
+    "deck.icns",
     "setup-dock-icon.js"
   ],
   "preferGlobal": true,

@@ -1,6 +1,6 @@
 var path = require('path')
 var fs = require('fs')
-var logo = require('@deck/terminal-logo').toTTY
+var logo = () => {}
 var exec = require('child_process').execSync
 
 require('./lib/dock-control')

@@ -19,7 +19,8 @@
     "lib",
     "cmd.js",
     "deck-path.js",
-    "index.js"
+    "index.js",
+    "setup-dock-icon"
   ],
   "preferGlobal": true,
   "author": "David Mark Clements",

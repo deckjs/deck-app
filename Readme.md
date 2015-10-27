@@ -111,6 +111,10 @@ The deck system is built on and/or utilizes:
 
 ![](anatomy.png)
 
+## Ecosystem
+
+To view other pieces of the deck system see <https://github.com/nearform/deck>
+
 ## Issues and PR's
 
 * Please open any issues for any deck related module on the <https://github.com/nearform/deck> community repo.

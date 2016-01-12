@@ -20,6 +20,7 @@
     "lib",
     "cmd.js",
     "deck-path.js",
+    "presenter-path.js",
     "index.js",
     "deck.icns",
     "setup-dock-icon.js"

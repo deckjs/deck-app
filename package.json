@@ -1,6 +1,6 @@
 {
   "name": "@deck/app",
-  "version": "1.4.17",
+  "version": "1.5.0-rc1",
   "description": "Deck is a markdown driven content presentation system",
   "main": "index.js",
   "bin": {

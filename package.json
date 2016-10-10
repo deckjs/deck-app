@@ -37,7 +37,7 @@
     "charm": "^1.0.0",
     "dot-stream": "^1.0.1",
     "editor": "1.0.0",
-    "electron-prebuilt": "0.34.0",
+    "electron-prebuilt": "^1.4.3",
     "event-stream": "^3.2.2",
     "extend-object": "^1.0.0",
     "init-package-json": "^1.2.0",
